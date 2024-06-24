@@ -15,6 +15,15 @@ Example:
 
 `python arduino_matter_provision.py nano_matter 1`
 
+## Provisioning process
+
+- Make sure the *Silicon Labs Arduino Core* and the *Arduino IDE* are both installed
+- Make sure there's only one board connected to your computer at a time
+- Click *'Tools > Burn Bootloader'* in the Arduino IDE (this'll erase the chip and burn the bootloader)
+- Flash your desired Matter sketch
+- Run the script to change the provisioning data
+- Provision the device to your Matter controller
+
 ## Supported boards
 
  - Arduino Nano Matter (`nano_matter`)
