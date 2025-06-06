@@ -5,7 +5,7 @@ The purpose of this script to flash unique provisioning data to Arduino Matter d
 The provisioning data is pre-calculated and unique for each device.
 Selecting config #0 will return the device to it's original (test) provisioning data.
 
-If you'd like to customize provisioning data instead of using pre-generated configurations - take a look at Silicon Labs' Matter [Provision tool](https://github.com/SiliconLabs/matter/tree/release_2.3.0-1.3/provision).
+If you'd like to customize provisioning data instead of using pre-generated configurations - take a look at Silicon Labs' Matter [Provision tool](https://github.com/SiliconLabs/matter_extension/tree/v2.5.1/provision).
 
 ## Usage
 
@@ -30,3 +30,4 @@ Example:
  - SparkFun Thing Plus Matter MGM240P (`thingplus_matter`)
  - Silicon Labs xG24 Explorer Kit (`xg24explorerkit`)
  - Silicon Labs xG24 Dev Kit (`xg24devkit`)
+ - Seeed Studio XIAO MG24 (Sense) (`xiao_mg24`)

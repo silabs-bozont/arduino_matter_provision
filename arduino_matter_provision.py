@@ -3,7 +3,7 @@
 #
 # The MIT License (MIT)
 #
-# Copyright 2024 Silicon Laboratories Inc. www.silabs.com
+# Copyright 2025 Silicon Laboratories Inc. www.silabs.com
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -162,9 +162,17 @@ nanomatter_config = {
     'name': 'nano_matter',
     'flasher_tool': 'openocd',
     'configs': [
-        "0_nanomatter_nvm3.hex", # default config (empty nvm3)
-        "1_nanomatter_nvm3.hex", # provision.py -vi 0x1515 -sd 0x0040 -pi 0x4240 -sp 62034000 -sn 4267
-        "2_nanomatter_nvm3.hex", # provision.py -vi 0x1515 -sd 0x0041 -pi 0x4241 -sp 62034001 -sn 4268
+        "0_nanomatter_nvm3.hex",  # default config (empty nvm3)
+        "1_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0040 -pi 0x4240 -sp 62034000 -sn 4267
+        "2_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0041 -pi 0x4241 -sp 62034001 -sn 4268
+        "3_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0050 -pi 0x4250 -sp 62034009 -sn 4277
+        "4_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0051 -pi 0x4251 -sp 62034010 -sn 4278
+        "5_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0052 -pi 0x4252 -sp 62034011 -sn 4279
+        "6_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0053 -pi 0x4253 -sp 62034012 -sn 4280
+        "7_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0054 -pi 0x4254 -sp 62034013 -sn 4281
+        "8_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0055 -pi 0x4255 -sp 62034014 -sn 4282
+        "9_nanomatter_nvm3.hex",  # provision.py -vi 0x1515 -sd 0x0056 -pi 0x4256 -sp 62034015 -sn 4283
+        "10_nanomatter_nvm3.hex", # provision.py -vi 0x1515 -sd 0x0057 -pi 0x4257 -sp 62034016 -sn 4284
     ]
 }
 
@@ -198,10 +206,22 @@ xg24devkit_config = {
     ]
 }
 
+xiaomg24_config = {
+    'name': 'xiao_mg24',
+    'flasher_tool': 'openocd',
+    'configs': [
+        "0_xiao_mg24_nvm3.hex", # default config (empty nvm3)
+        "1_xiao_mg24_nvm3.hex", # provision.py -vi 0x1049 -sd 0x0048 -pi 0x4248 -sp 62034008 -sn 4275
+        "2_xiao_mg24_nvm3.hex", # provision.py -vi 0x1049 -sd 0x0049 -pi 0x4249 -sp 62034009 -sn 4276
+    ]
+}
+
+
 supported_boards = [nanomatter_config,
                     thingplusmatter_config,
                     xg24explorerkit_config,
-                    xg24devkit_config]
+                    xg24devkit_config,
+                    xiaomg24_config]
 
 
 if __name__ == "__main__":
